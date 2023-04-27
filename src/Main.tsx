@@ -1,12 +1,14 @@
-import { View, Text } from "react-native"
-import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context"
+import { Text } from "react-native"
+import { SafeAreaView as RNSafeAreaView, SafeAreaProvider } from "react-native-safe-area-context"
+import { styled } from 'nativewind';
 
+const SafeAreaView = styled(RNSafeAreaView);
 
 const Main = () => {
     return (
         <SafeAreaProvider>
-            <SafeAreaView style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-                <Text>Hello World</Text>
+            <SafeAreaView className="flex-1 items-center justify-center">
+                <Text className="font-bold text-3xl">Hello World</Text>
             </SafeAreaView>
         </SafeAreaProvider>
     );
