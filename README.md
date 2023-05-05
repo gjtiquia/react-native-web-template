@@ -36,3 +36,5 @@ Serve the static bundle locally with the following command.
 npx serve web-build
 ```
 Follow the on-screen instructions to test locally how the app works in production.
+
+Read [here](https://docs.expo.dev/distribution/publishing-websites/) for more documentation on creating web apps with Expo.
