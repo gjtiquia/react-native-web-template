@@ -38,3 +38,11 @@ npx serve web-build
 Follow the on-screen instructions to test locally how the app works in production.
 
 Read [here](https://docs.expo.dev/distribution/publishing-websites/) for more documentation on creating web apps with Expo.
+
+### Notes on Importing Files
+
+Use absolute imports when importing files, instead of relative paths,
+
+The babel module resolver plugin and TypeScript path mapping has been setup so that absolute imports can be used when importing files. This prevents long relative paths and makes the code more clean and readable. 
+
+This is inspired by the Obytes Starter, a production-ready React Native template. Read [here](https://starter.obytes.com/docs/getting-started/project-structure#importing-files) for more about why and how they setup the absolute imports.
